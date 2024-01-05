@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Tilmelding</title>
+  </head>
+  <body>
+    <form id="signupForm">
+      <label for="name">Navn:</label>
+      <input type="text" id="name" name="name" value="John" required />
+
+      <label for="lastName">Efternavn:</label>
+      <input type="text" id="lastName" name="lastName" value="Doe" required />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="john.doe@example.com"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        value="password123"
+        required
+      />
+
+      <label for="confirmPassword">Gentag password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        value="password123"
+        required
+      />
+
+      <div id="errorContainer"></div>
+
+      <input type="submit" value="Tilmeld" />
+    </form>
+  </body>
+</html>
